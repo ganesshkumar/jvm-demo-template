@@ -1,0 +1,2 @@
+language: demo-template-using-gradle
+fprocess: "java -cp .:libs/afterburn-java-parser-1.0.0-rc1.jar:function/build/libs/java8-gradle-1.0.jar Main"

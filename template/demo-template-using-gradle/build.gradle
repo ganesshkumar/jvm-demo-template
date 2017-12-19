@@ -1,0 +1,26 @@
+plugins {
+  id 'com.github.johnrengelman.shadow' version '2.0.2'
+  id 'java'
+}
+
+group 'com.ganessshkumar'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url "https://dl.bintray.com/ganesshkumar/openfaas" }
+}
+
+dependencies {
+    compile 'com.ganesshkumar:afterburn-java-parser:1.0.0-rc1'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.ganesshkumar.demotemplate.Main'
+    }
+}

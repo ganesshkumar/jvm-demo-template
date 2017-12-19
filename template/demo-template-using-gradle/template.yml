@@ -1,0 +1,2 @@
+language: demo-template-using-gradle
+fprocess: "java -jar jvm-demo-template-1.0.0-all.jar"
